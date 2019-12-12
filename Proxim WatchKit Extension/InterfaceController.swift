@@ -18,6 +18,9 @@ class InterfaceController: WKInterfaceController, HKWorkoutSessionDelegate, HKLi
     var session : HKWorkoutSession!
     var builder : HKLiveWorkoutBuilder!
     
+    @IBOutlet var connectionLabel: WKInterfaceLabel!
+    @IBOutlet var secondConnection: WKInterfaceLabel!
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         healthStore.requestAuthorization(toShare: typesToShare, read: typesToRead) { (succ, error) in
@@ -41,7 +44,7 @@ class InterfaceController: WKInterfaceController, HKWorkoutSessionDelegate, HKLi
             let dataSource = HKLiveWorkoutDataSource(healthStore: healthStore, workoutConfiguration: config)
             dataSource.disableCollection(for: HKQuantityType.quantityType(forIdentifier: .heartRate)!)
             dataSource.disableCollection(for: HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned)!)
-            dataSource.disableCollection(for: HKQuantityType.quantityType(forIdentifier: .basalEnergyBurned)!)
+//            dataSource.disableCollection(for: HKQuantityType.quantityType(forIdentifier: .basalEnergyBurned)!)
             print(dataSource.typesToCollect)
             builder.dataSource = dataSource
             
@@ -79,6 +82,7 @@ class InterfaceController: WKInterfaceController, HKWorkoutSessionDelegate, HKLi
     func workoutBuilder(_ workoutBuilder: HKLiveWorkoutBuilder, didCollectDataOf collectedTypes: Set<HKSampleType>) {
         for sampType in collectedTypes {
             print(sampType)
+//            print(WKExtension.shared().delegate as! ExtensionDelegate)
         }
     }
     

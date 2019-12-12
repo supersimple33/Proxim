@@ -10,11 +10,51 @@ import WatchKit
 import WatchConnectivity
 import UserNotifications
 
-class ExtensionDelegate: NSObject, WKExtensionDelegate {
+class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate, UNUserNotificationCenterDelegate {
 
     let notificationCenter = UNUserNotificationCenter.current()
+   
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        if error != nil {
+            print(error!)
+        }
+        print(activationState.rawValue, " state")
+    }
+    
+    func sessionReachabilityDidChange(_ session: WCSession) {
+        print("Is Reachable \(session.isReachable)")
+        (WKExtension.shared().rootInterfaceController as! InterfaceController).connectionLabel.setText("Connection: \(session.isReachable)")
+        let content = UNMutableNotificationContent()
+        content.title = "Connection Changed"
+        content.body = "Connection: \(session.isReachable)"
+        let request = UNNotificationRequest(identifier: "Change", content: content, trigger: nil)
+        notificationCenter.add(request) { (error) in
+            if error != nil {
+                print("Notif Error")
+                print(error!)
+            } else {
+                print("queued")
+            }
+        }
+    }
+    
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert]) { (succ, error) in
+            if error != nil {
+                print(error)
+            } else if succ {
+                print("Notif Granted")
+            }
+        }
+        
+        WCSession.default.delegate = self
+        guard WCSession.isSupported() else {
+            fatalError("requires watch connectivity")
+        }
+        WCSession.default.activate()
+        print("uni")
+        notificationCenter.delegate = self
     }
 
     func applicationDidBecomeActive() {
@@ -55,5 +95,9 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
             }
         }
     }
-
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        print("will present")
+        completionHandler(.alert)
+    }
 }

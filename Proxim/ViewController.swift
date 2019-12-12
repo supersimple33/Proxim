@@ -8,6 +8,7 @@
 
 import UIKit
 import HealthKit
+import UserNotifications
 
 class ViewController: UIViewController {
 
@@ -20,6 +21,13 @@ class ViewController: UIViewController {
                 print(error)
             } else if succ {
                 print("Health Granted")
+            }
+        }
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert]) { (succ, error) in
+            if error != nil {
+                print(error)
+            } else if succ {
+                print("Notif Granted")
             }
         }
     }
