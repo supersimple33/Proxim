@@ -1,0 +1,870 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE8B2E8023A2F19E0037FA92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B2E7F23A2F19E0037FA92 /* AppDelegate.swift */; };
+		FE8B2E8223A2F19E0037FA92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B2E8123A2F19E0037FA92 /* SceneDelegate.swift */; };
+		FE8B2E8423A2F19E0037FA92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B2E8323A2F19E0037FA92 /* ViewController.swift */; };
+		FE8B2E8723A2F19E0037FA92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE8B2E8523A2F19E0037FA92 /* Main.storyboard */; };
+		FE8B2E8923A2F19F0037FA92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE8B2E8823A2F19F0037FA92 /* Assets.xcassets */; };
+		FE8B2E8C23A2F19F0037FA92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE8B2E8A23A2F19F0037FA92 /* LaunchScreen.storyboard */; };
+		FE8B2E9723A2F19F0037FA92 /* ProximTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B2E9623A2F19F0037FA92 /* ProximTests.swift */; };
+		FE8B2EA223A2F19F0037FA92 /* ProximUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B2EA123A2F19F0037FA92 /* ProximUITests.swift */; };
+		FE8B2EA723A2F19F0037FA92 /* Proxim WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FE8B2EA623A2F19F0037FA92 /* Proxim WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FE8B2EAD23A2F19F0037FA92 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE8B2EAB23A2F19F0037FA92 /* Interface.storyboard */; };
+		FE8B2EAF23A2F1A00037FA92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE8B2EAE23A2F1A00037FA92 /* Assets.xcassets */; };
+		FE8B2EB623A2F1A00037FA92 /* Proxim WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FE8B2EB523A2F1A00037FA92 /* Proxim WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FE8B2EBB23A2F1A00037FA92 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B2EBA23A2F1A00037FA92 /* InterfaceController.swift */; };
+		FE8B2EBD23A2F1A00037FA92 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B2EBC23A2F1A00037FA92 /* ExtensionDelegate.swift */; };
+		FE8B2EBF23A2F1A00037FA92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE8B2EBE23A2F1A00037FA92 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE8B2E9323A2F19F0037FA92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE8B2E7423A2F19E0037FA92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE8B2E7B23A2F19E0037FA92;
+			remoteInfo = Proxim;
+		};
+		FE8B2E9E23A2F19F0037FA92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE8B2E7423A2F19E0037FA92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE8B2E7B23A2F19E0037FA92;
+			remoteInfo = Proxim;
+		};
+		FE8B2EA823A2F19F0037FA92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE8B2E7423A2F19E0037FA92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE8B2EA523A2F19F0037FA92;
+			remoteInfo = "Proxim WatchKit App";
+		};
+		FE8B2EB723A2F1A00037FA92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE8B2E7423A2F19E0037FA92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE8B2EB423A2F1A00037FA92;
+			remoteInfo = "Proxim WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FE8B2EC623A2F1A00037FA92 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FE8B2EB623A2F1A00037FA92 /* Proxim WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE8B2ECA23A2F1A00037FA92 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FE8B2EA723A2F19F0037FA92 /* Proxim WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FE8B2E7C23A2F19E0037FA92 /* Proxim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proxim.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE8B2E7F23A2F19E0037FA92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FE8B2E8123A2F19E0037FA92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FE8B2E8323A2F19E0037FA92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FE8B2E8623A2F19E0037FA92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE8B2E8823A2F19F0037FA92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE8B2E8B23A2F19F0037FA92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE8B2E8D23A2F19F0037FA92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE8B2E9223A2F19F0037FA92 /* ProximTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProximTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE8B2E9623A2F19F0037FA92 /* ProximTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximTests.swift; sourceTree = "<group>"; };
+		FE8B2E9823A2F19F0037FA92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE8B2E9D23A2F19F0037FA92 /* ProximUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProximUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE8B2EA123A2F19F0037FA92 /* ProximUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximUITests.swift; sourceTree = "<group>"; };
+		FE8B2EA323A2F19F0037FA92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE8B2EA623A2F19F0037FA92 /* Proxim WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Proxim WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE8B2EAC23A2F19F0037FA92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		FE8B2EAE23A2F1A00037FA92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE8B2EB023A2F1A00037FA92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE8B2EB523A2F1A00037FA92 /* Proxim WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Proxim WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE8B2EBA23A2F1A00037FA92 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		FE8B2EBC23A2F1A00037FA92 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		FE8B2EBE23A2F1A00037FA92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE8B2EC023A2F1A00037FA92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE8B2E7923A2F19E0037FA92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE8B2E8F23A2F19F0037FA92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE8B2E9A23A2F19F0037FA92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE8B2EB223A2F1A00037FA92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE8B2E7323A2F19E0037FA92 = {
+			isa = PBXGroup;
+			children = (
+				FE8B2E7E23A2F19E0037FA92 /* Proxim */,
+				FE8B2E9523A2F19F0037FA92 /* ProximTests */,
+				FE8B2EA023A2F19F0037FA92 /* ProximUITests */,
+				FE8B2EAA23A2F19F0037FA92 /* Proxim WatchKit App */,
+				FE8B2EB923A2F1A00037FA92 /* Proxim WatchKit Extension */,
+				FE8B2E7D23A2F19E0037FA92 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE8B2E7D23A2F19E0037FA92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE8B2E7C23A2F19E0037FA92 /* Proxim.app */,
+				FE8B2E9223A2F19F0037FA92 /* ProximTests.xctest */,
+				FE8B2E9D23A2F19F0037FA92 /* ProximUITests.xctest */,
+				FE8B2EA623A2F19F0037FA92 /* Proxim WatchKit App.app */,
+				FE8B2EB523A2F1A00037FA92 /* Proxim WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE8B2E7E23A2F19E0037FA92 /* Proxim */ = {
+			isa = PBXGroup;
+			children = (
+				FE8B2E7F23A2F19E0037FA92 /* AppDelegate.swift */,
+				FE8B2E8123A2F19E0037FA92 /* SceneDelegate.swift */,
+				FE8B2E8323A2F19E0037FA92 /* ViewController.swift */,
+				FE8B2E8523A2F19E0037FA92 /* Main.storyboard */,
+				FE8B2E8823A2F19F0037FA92 /* Assets.xcassets */,
+				FE8B2E8A23A2F19F0037FA92 /* LaunchScreen.storyboard */,
+				FE8B2E8D23A2F19F0037FA92 /* Info.plist */,
+			);
+			path = Proxim;
+			sourceTree = "<group>";
+		};
+		FE8B2E9523A2F19F0037FA92 /* ProximTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE8B2E9623A2F19F0037FA92 /* ProximTests.swift */,
+				FE8B2E9823A2F19F0037FA92 /* Info.plist */,
+			);
+			path = ProximTests;
+			sourceTree = "<group>";
+		};
+		FE8B2EA023A2F19F0037FA92 /* ProximUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FE8B2EA123A2F19F0037FA92 /* ProximUITests.swift */,
+				FE8B2EA323A2F19F0037FA92 /* Info.plist */,
+			);
+			path = ProximUITests;
+			sourceTree = "<group>";
+		};
+		FE8B2EAA23A2F19F0037FA92 /* Proxim WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				FE8B2EAB23A2F19F0037FA92 /* Interface.storyboard */,
+				FE8B2EAE23A2F1A00037FA92 /* Assets.xcassets */,
+				FE8B2EB023A2F1A00037FA92 /* Info.plist */,
+			);
+			path = "Proxim WatchKit App";
+			sourceTree = "<group>";
+		};
+		FE8B2EB923A2F1A00037FA92 /* Proxim WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FE8B2EBA23A2F1A00037FA92 /* InterfaceController.swift */,
+				FE8B2EBC23A2F1A00037FA92 /* ExtensionDelegate.swift */,
+				FE8B2EBE23A2F1A00037FA92 /* Assets.xcassets */,
+				FE8B2EC023A2F1A00037FA92 /* Info.plist */,
+			);
+			path = "Proxim WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE8B2E7B23A2F19E0037FA92 /* Proxim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE8B2ECB23A2F1A00037FA92 /* Build configuration list for PBXNativeTarget "Proxim" */;
+			buildPhases = (
+				FE8B2E7823A2F19E0037FA92 /* Sources */,
+				FE8B2E7923A2F19E0037FA92 /* Frameworks */,
+				FE8B2E7A23A2F19E0037FA92 /* Resources */,
+				FE8B2ECA23A2F1A00037FA92 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE8B2EA923A2F19F0037FA92 /* PBXTargetDependency */,
+			);
+			name = Proxim;
+			productName = Proxim;
+			productReference = FE8B2E7C23A2F19E0037FA92 /* Proxim.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE8B2E9123A2F19F0037FA92 /* ProximTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE8B2ECE23A2F1A00037FA92 /* Build configuration list for PBXNativeTarget "ProximTests" */;
+			buildPhases = (
+				FE8B2E8E23A2F19F0037FA92 /* Sources */,
+				FE8B2E8F23A2F19F0037FA92 /* Frameworks */,
+				FE8B2E9023A2F19F0037FA92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE8B2E9423A2F19F0037FA92 /* PBXTargetDependency */,
+			);
+			name = ProximTests;
+			productName = ProximTests;
+			productReference = FE8B2E9223A2F19F0037FA92 /* ProximTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FE8B2E9C23A2F19F0037FA92 /* ProximUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE8B2ED123A2F1A00037FA92 /* Build configuration list for PBXNativeTarget "ProximUITests" */;
+			buildPhases = (
+				FE8B2E9923A2F19F0037FA92 /* Sources */,
+				FE8B2E9A23A2F19F0037FA92 /* Frameworks */,
+				FE8B2E9B23A2F19F0037FA92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE8B2E9F23A2F19F0037FA92 /* PBXTargetDependency */,
+			);
+			name = ProximUITests;
+			productName = ProximUITests;
+			productReference = FE8B2E9D23A2F19F0037FA92 /* ProximUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		FE8B2EA523A2F19F0037FA92 /* Proxim WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE8B2EC723A2F1A00037FA92 /* Build configuration list for PBXNativeTarget "Proxim WatchKit App" */;
+			buildPhases = (
+				FE8B2EA423A2F19F0037FA92 /* Resources */,
+				FE8B2EC623A2F1A00037FA92 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE8B2EB823A2F1A00037FA92 /* PBXTargetDependency */,
+			);
+			name = "Proxim WatchKit App";
+			productName = "Proxim WatchKit App";
+			productReference = FE8B2EA623A2F19F0037FA92 /* Proxim WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		FE8B2EB423A2F1A00037FA92 /* Proxim WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE8B2EC323A2F1A00037FA92 /* Build configuration list for PBXNativeTarget "Proxim WatchKit Extension" */;
+			buildPhases = (
+				FE8B2EB123A2F1A00037FA92 /* Sources */,
+				FE8B2EB223A2F1A00037FA92 /* Frameworks */,
+				FE8B2EB323A2F1A00037FA92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Proxim WatchKit Extension";
+			productName = "Proxim WatchKit Extension";
+			productReference = FE8B2EB523A2F1A00037FA92 /* Proxim WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE8B2E7423A2F19E0037FA92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Addison Hanrattie";
+				TargetAttributes = {
+					FE8B2E7B23A2F19E0037FA92 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					FE8B2E9123A2F19F0037FA92 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = FE8B2E7B23A2F19E0037FA92;
+					};
+					FE8B2E9C23A2F19F0037FA92 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = FE8B2E7B23A2F19E0037FA92;
+					};
+					FE8B2EA523A2F19F0037FA92 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					FE8B2EB423A2F1A00037FA92 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = FE8B2E7723A2F19E0037FA92 /* Build configuration list for PBXProject "Proxim" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE8B2E7323A2F19E0037FA92;
+			productRefGroup = FE8B2E7D23A2F19E0037FA92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE8B2E7B23A2F19E0037FA92 /* Proxim */,
+				FE8B2E9123A2F19F0037FA92 /* ProximTests */,
+				FE8B2E9C23A2F19F0037FA92 /* ProximUITests */,
+				FE8B2EA523A2F19F0037FA92 /* Proxim WatchKit App */,
+				FE8B2EB423A2F1A00037FA92 /* Proxim WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE8B2E7A23A2F19E0037FA92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE8B2E8C23A2F19F0037FA92 /* LaunchScreen.storyboard in Resources */,
+				FE8B2E8923A2F19F0037FA92 /* Assets.xcassets in Resources */,
+				FE8B2E8723A2F19E0037FA92 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE8B2E9023A2F19F0037FA92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE8B2E9B23A2F19F0037FA92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE8B2EA423A2F19F0037FA92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE8B2EAF23A2F1A00037FA92 /* Assets.xcassets in Resources */,
+				FE8B2EAD23A2F19F0037FA92 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE8B2EB323A2F1A00037FA92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE8B2EBF23A2F1A00037FA92 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE8B2E7823A2F19E0037FA92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE8B2E8423A2F19E0037FA92 /* ViewController.swift in Sources */,
+				FE8B2E8023A2F19E0037FA92 /* AppDelegate.swift in Sources */,
+				FE8B2E8223A2F19E0037FA92 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE8B2E8E23A2F19F0037FA92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE8B2E9723A2F19F0037FA92 /* ProximTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE8B2E9923A2F19F0037FA92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE8B2EA223A2F19F0037FA92 /* ProximUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE8B2EB123A2F1A00037FA92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE8B2EBD23A2F1A00037FA92 /* ExtensionDelegate.swift in Sources */,
+				FE8B2EBB23A2F1A00037FA92 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE8B2E9423A2F19F0037FA92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE8B2E7B23A2F19E0037FA92 /* Proxim */;
+			targetProxy = FE8B2E9323A2F19F0037FA92 /* PBXContainerItemProxy */;
+		};
+		FE8B2E9F23A2F19F0037FA92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE8B2E7B23A2F19E0037FA92 /* Proxim */;
+			targetProxy = FE8B2E9E23A2F19F0037FA92 /* PBXContainerItemProxy */;
+		};
+		FE8B2EA923A2F19F0037FA92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE8B2EA523A2F19F0037FA92 /* Proxim WatchKit App */;
+			targetProxy = FE8B2EA823A2F19F0037FA92 /* PBXContainerItemProxy */;
+		};
+		FE8B2EB823A2F1A00037FA92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE8B2EB423A2F1A00037FA92 /* Proxim WatchKit Extension */;
+			targetProxy = FE8B2EB723A2F1A00037FA92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FE8B2E8523A2F19E0037FA92 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE8B2E8623A2F19E0037FA92 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FE8B2E8A23A2F19F0037FA92 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE8B2E8B23A2F19F0037FA92 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FE8B2EAB23A2F19F0037FA92 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE8B2EAC23A2F19F0037FA92 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE8B2EC123A2F1A00037FA92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FE8B2EC223A2F1A00037FA92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE8B2EC423A2F1A00037FA92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z9MH7A898M;
+				INFOPLIST_FILE = "Proxim WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.addisonhanrattie.Proxim.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		FE8B2EC523A2F1A00037FA92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z9MH7A898M;
+				INFOPLIST_FILE = "Proxim WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.addisonhanrattie.Proxim.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		FE8B2EC823A2F1A00037FA92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z9MH7A898M;
+				IBSC_MODULE = Proxim_WatchKit_Extension;
+				INFOPLIST_FILE = "Proxim WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.addisonhanrattie.Proxim.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		FE8B2EC923A2F1A00037FA92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z9MH7A898M;
+				IBSC_MODULE = Proxim_WatchKit_Extension;
+				INFOPLIST_FILE = "Proxim WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.addisonhanrattie.Proxim.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		FE8B2ECC23A2F1A00037FA92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z9MH7A898M;
+				INFOPLIST_FILE = Proxim/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.addisonhanrattie.Proxim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE8B2ECD23A2F1A00037FA92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z9MH7A898M;
+				INFOPLIST_FILE = Proxim/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.addisonhanrattie.Proxim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FE8B2ECF23A2F1A00037FA92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z9MH7A898M;
+				INFOPLIST_FILE = ProximTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.addisonhanrattie.ProximTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Proxim.app/Proxim";
+			};
+			name = Debug;
+		};
+		FE8B2ED023A2F1A00037FA92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z9MH7A898M;
+				INFOPLIST_FILE = ProximTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.addisonhanrattie.ProximTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Proxim.app/Proxim";
+			};
+			name = Release;
+		};
+		FE8B2ED223A2F1A00037FA92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z9MH7A898M;
+				INFOPLIST_FILE = ProximUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.addisonhanrattie.ProximUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Proxim;
+			};
+			name = Debug;
+		};
+		FE8B2ED323A2F1A00037FA92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z9MH7A898M;
+				INFOPLIST_FILE = ProximUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.addisonhanrattie.ProximUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Proxim;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE8B2E7723A2F19E0037FA92 /* Build configuration list for PBXProject "Proxim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE8B2EC123A2F1A00037FA92 /* Debug */,
+				FE8B2EC223A2F1A00037FA92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE8B2EC323A2F1A00037FA92 /* Build configuration list for PBXNativeTarget "Proxim WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE8B2EC423A2F1A00037FA92 /* Debug */,
+				FE8B2EC523A2F1A00037FA92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE8B2EC723A2F1A00037FA92 /* Build configuration list for PBXNativeTarget "Proxim WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE8B2EC823A2F1A00037FA92 /* Debug */,
+				FE8B2EC923A2F1A00037FA92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE8B2ECB23A2F1A00037FA92 /* Build configuration list for PBXNativeTarget "Proxim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE8B2ECC23A2F1A00037FA92 /* Debug */,
+				FE8B2ECD23A2F1A00037FA92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE8B2ECE23A2F1A00037FA92 /* Build configuration list for PBXNativeTarget "ProximTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE8B2ECF23A2F1A00037FA92 /* Debug */,
+				FE8B2ED023A2F1A00037FA92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE8B2ED123A2F1A00037FA92 /* Build configuration list for PBXNativeTarget "ProximUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE8B2ED223A2F1A00037FA92 /* Debug */,
+				FE8B2ED323A2F1A00037FA92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE8B2E7423A2F19E0037FA92 /* Project object */;
+}
