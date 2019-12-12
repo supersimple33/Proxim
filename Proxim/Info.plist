@@ -60,5 +60,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSHealthClinicalHealthRecordsShareUsageDescription</key>
+	<string>Used for connect test</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>Used for connect test</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>Used for connect test</string>
 </dict>
 </plist>

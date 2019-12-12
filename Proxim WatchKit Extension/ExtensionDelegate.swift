@@ -7,9 +7,12 @@
 //
 
 import WatchKit
+import WatchConnectivity
+import UserNotifications
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
+    let notificationCenter = UNUserNotificationCenter.current()
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
     }
