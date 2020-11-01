@@ -24,10 +24,16 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate, UNUse
     
     func sessionReachabilityDidChange(_ session: WCSession) {
         print("Is Reachable \(session.isReachable)")
+        var noun = "error"
+        if session.isReachable {
+            noun = "connected"
+        } else if !session.isReachable {
+            noun = "lost"
+        }
         (WKExtension.shared().rootInterfaceController as! InterfaceController).connectionLabel.setText("Connection: \(session.isReachable)")
         let content = UNMutableNotificationContent()
         content.title = "Connection Changed"
-        content.body = "Connection: \(session.isReachable)"
+        content.body = "Connection: \(noun)"
         let request = UNNotificationRequest(identifier: "Change", content: content, trigger: nil)
         notificationCenter.add(request) { (error) in
             if error != nil {
@@ -38,12 +44,11 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate, UNUse
             }
         }
     }
-    
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert]) { (succ, error) in
             if error != nil {
-                print(error)
+                print(error!)
             } else if succ {
                 print("Notif Granted")
             }
