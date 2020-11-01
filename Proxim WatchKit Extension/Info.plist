@@ -30,21 +30,21 @@
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.watchkit</string>
 	</dict>
-	<key>UIBackgroundModes</key>
-	<array/>
-	<key>WKBackgroundModes</key>
-	<array>
-		<string>workout-processing</string>
-	</array>
-	<key>WKExtensionDelegateClassName</key>
-	<string>$(PRODUCT_MODULE_NAME).ExtensionDelegate</string>
-	<key>WKRunsIndependentlyOfCompanionApp</key>
-	<true/>
 	<key>NSHealthClinicalHealthRecordsShareUsageDescription</key>
 	<string>Used for connect test</string>
 	<key>NSHealthShareUsageDescription</key>
 	<string>Used for connect test</string>
 	<key>NSHealthUpdateUsageDescription</key>
 	<string>Used for connect test</string>
+	<key>UIBackgroundModes</key>
+	<array/>
+	<key>WKBackgroundModes</key>
+	<array>
+		<string>physical-therapy</string>
+	</array>
+	<key>WKExtensionDelegateClassName</key>
+	<string>$(PRODUCT_MODULE_NAME).ExtensionDelegate</string>
+	<key>WKRunsIndependentlyOfCompanionApp</key>
+	<true/>
 </dict>
 </plist>

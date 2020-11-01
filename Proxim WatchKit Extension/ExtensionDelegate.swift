@@ -10,9 +10,10 @@ import WatchKit
 import WatchConnectivity
 import UserNotifications
 
-class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate, UNUserNotificationCenterDelegate {
+class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate, UNUserNotificationCenterDelegate, WKExtendedRuntimeSessionDelegate {
 
     let notificationCenter = UNUserNotificationCenter.current()
+    var extendedSession : WKExtendedRuntimeSession!
    
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         if error != nil {
@@ -55,6 +56,9 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate, UNUse
         WCSession.default.activate()
         print("uni")
         notificationCenter.delegate = self
+        extendedSession = WKExtendedRuntimeSession()
+        extendedSession.delegate = self
+        extendedSession.start()
     }
 
     func applicationDidBecomeActive() {
@@ -99,5 +103,21 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate, UNUse
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         print("will present")
         completionHandler(.alert)
+    }
+    
+    // MARK: - Extended Sessions
+    func extendedRuntimeSession(_ extendedRuntimeSession: WKExtendedRuntimeSession, didInvalidateWith reason: WKExtendedRuntimeSessionInvalidationReason, error: Error?) {
+        print(reason)
+        if error != nil {
+            print(error!)
+        }
+    }
+    
+    func extendedRuntimeSessionDidStart(_ extendedRuntimeSession: WKExtendedRuntimeSession) {
+        print("Now using time")
+    }
+    
+    func extendedRuntimeSessionWillExpire(_ extendedRuntimeSession: WKExtendedRuntimeSession) {
+        print("About to expire transfer to a real workout")
     }
 }
